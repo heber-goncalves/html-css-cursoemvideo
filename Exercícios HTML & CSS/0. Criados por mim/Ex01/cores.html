@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS3</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cores em CSS3</h1>
+    </header>
+    <main>
+        <h2>Sites para escolher paletas</h2>
+        <ul style="display: inline-block; text-align: left;">
+            <li>
+                <a href="https://color.adobe.com/pt/" target="_blank">Adobe Colors</a>
+            </li>
+            <p>Site da Adobe com diversas formas de criar uma paleta nova
+            <br><a style="background-color: #ffffff; border-color: #ffffff;" href="https://color.adobe.com/pt/" target="_blank">
+                    <img class="imgborder" width="450px" src="images/coresemcss3/adobeColors.png" alt="Adobe Colors">
+                </a>
+            </p>
+        </ul>
+
+        <ul style="display: inline-block; text-align: left;">
+            <li>
+                <a href="https://coolors.co/" target="_blank">Coolors</a>
+            </li>
+            <p>Site que fixa as cores escolhidas uma a uma e gera as próximas 
+            <br><a style="background-color: #ffffff; border-color: #ffffff;" href="https://coolors.co/" target="_blank">
+                    <img class="imgborder" width="450px" src="images/coresemcss3/coolors.png" alt="Coolors">
+                </a>
+            </p>
+        </ul>
+
+        <hr>
+
+        <h2>Formas de representação</h2>
+        <!--Representação por nomes-->
+        <h2 style="background-color: blue; color: white;">Por nomes (blue)</h2>
+        <!--Representação hexadecimal-->
+        <h2 style="background-color: #af1ab1; color: #ffffff;">Hexadecimal (#af1ab1)</h2>
+        <!--Representação RGB-->
+        <h2 style="background-color: rgb(221, 71, 34); color: rgb(255, 255, 255);">RGB (Red, Green, Blue) rgb(221, 71, 34)</h2>
+        <!--Representação HSL (Hue, Saturation, Luminosity)-->
+        <h2 style="background-color: hsl(65, 100%, 62%); color: hsl(0, 0%, 100%);">HSL (Hue, Saturation, Luminosity) hsl(65, 100%, 62%)</h2>
+        <!--Representação HWB-->
+        <h2 style="background-color: hwb(113 13% 18%); color: hsl(0, 0%, 100%);">hwb(113 13% 18%)</h2>
+
+        <p>Obs.: também é posível determinar a opacidade (nível de transparência) em CSS3</p>
+
+        <hr>
+
+        <h2>Gradientes</h2>
+        <div id="gradienteLinear">
+            <p>Linear-gradient</p>
+            <p>background-image: linear-gradient(to right, #691E8F, #ff0020);</p>
+        </div>
+        <div id="gradienteRadial">
+            <p>Radial-gradient</p>
+            <p>background-image: radial-gradient(#691E8F, #ff0020);</p>
+        </div>
+    </main>
+    <footer>
+        <p class="centralizado"><a href="index.html">Voltar ao menu inicial</a></p>
+    </footer>
+</body>
+</html>

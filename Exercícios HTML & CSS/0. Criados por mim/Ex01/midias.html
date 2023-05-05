@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mídias</h1>
+    </header>
+    <main>
+        <h2>Imagens dinâmicas</h2>
+        <p>Altere o tamanho da janela para a imagem ser alterada</p>
+        <picture>
+            <source media="(max-width: 850px)" srcset="images/midias/pequena.png" type="image/png">
+            <source media="(max-width: 1200px)" srcset="images/midias/media.png" type="image/png">
+            <img src="images/midias/grande.png" alt="Imagem genérica">
+        </picture>
+
+        <hr>
+        
+        <h2>Áudios</h2>
+        <p>Método 1: áudio em formato único</p>
+        <audio src="audios/musica.mp3" preload="metadata" controls></audio>
+
+        <p>Método 2: áudio em mais de um formato</p>
+        <audio preload="metadata" controls loop>
+            <!--Primeiro tenta em mp3-->
+            <source src="audios/musica.mp3" type="audio/mpeg">
+            <!--Depois tenta em ogg-->
+            <source src="audios/musica.ogg" type="audio/ogg">
+            <!--Por último em WAV-->
+            <source src="audios/musica.mp3" type="audio/wav">
+            <p>Infelizmente o seu navegador não suporta a reprodução de áudios. <a href="audios/musica.mp3" download="musica.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo mp3</a></p>
+        </audio>
+
+        <hr>
+        
+        <h2>Vídeos</h2>
+        <p>Método 1: vídeo em formato único</p>
+        <video width="540px" src="videos/Ruanoexterior.mp4" poster="images/midias/thumbnail.png" controls></video>
+        
+        <p>Método 2: vídeo em vários formatos</p>
+        <video width="540px" poster="images/midias/thumbnail.png" controls>
+            <source src="videos/Ruanoexterior.mp4" type="video/mp4">
+            <source src="videos/Ruanoexterior.ogv" type="video/ogv">
+            <source src="videos/ruanoexterior.webm" type="video/webm">
+            <p>Infelizmente o seu navegador não suporta a reprodução de vídeos. <a href="videos/Ruanoexterior.mp4" download="Ruanoexterior.mp4" type="video/mp4">Clique aqui para fazer o download do arquivo mp4</a></p>
+        </video>
+    </main>
+    <footer>
+        <p class="centralizado"><a href="index.html">Voltar ao menu inicial</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+    /*
+    id (#) é usado para identificar apenas um elemento
+    class (.) é usado para identificar vários elementos
+    */
+* {
+    background-color: #1D8AB5;
+}
+
+main{
+    font: normal 14px Arial, Verdana, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #135975;
+    padding: 10px;
+    padding-top: 1px;
+    border-radius: 5px;
+    margin: 5%;
+    margin-top: 1%;
+    margin-left: 1%;
+
+}
+h1{
+    background-color: white;
+}
+p{
+    background-color: white;
+}
+#titulo-principal{
+    color: #135975;
+}
+.subtitulos{
+    color: white;
+}

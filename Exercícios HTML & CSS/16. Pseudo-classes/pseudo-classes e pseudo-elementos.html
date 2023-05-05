@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e pseudo-elementos</title>
+    <style>
+        /* 
+            SELETORES PERSONALIZADOS
+            #   = id (identifica uma única tag a ser alterada)
+            .   = class (identifica uma classe de tags que terão as mesmas propriedades)
+            :   = pseudo-class (:hover, :focus, :visited, :actived, :disabled, :enabled, :checked, etc)
+            ::  = pseudo-element (::after, ::before, ::first-letter, ::first-line, ::backdrop, etc)
+            >   = children (indica uma tag que está dentro de uma tag mãe)
+        */
+        a{
+            font: 400 16px Arial, Helvetica, sans-serif;
+            color: #0c3f53 ;
+            text-decoration: none;
+
+        }
+        a:visited{
+            color: #d4ecf5;
+        }
+        a:hover {
+            color: yellow;
+            background-color: rgb(66, 97, 198);
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellowgreen;
+        }
+
+        a::after{
+            content: ' [link]';
+            color: darkcyan;
+            text-decoration: none;
+            font-weight: 100;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+    </ul>
+</body>
+</html>

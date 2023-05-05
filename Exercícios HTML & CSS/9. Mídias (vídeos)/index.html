@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção de vídeos</title>
+</head>
+<body>
+    <h1>Vídeos locais</h1>
+    <p>Este vídeo está hospedado no meu próprio computador</p>
+    <h2>Método 1</h2>
+    <video src="videos/Ruanoexterior.mp4" width="330px" poster="imagens/thumbnail.png" controls loop></video>
+    <h2>Método 2</h2>
+    <video width="330px" poster="imagens/thumbnail.png" controls>
+        <source src="videos/Ruanoexterior.mp4" type="video/mp4">
+        <source src="videos/ruanoexterior.webm" type="video/webm">
+        <source src="videos/Ruanoexterior.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Vídeos incorporados</h1>
+    <p>Vídeos do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2BXCId-oyNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--O YouTube é uma boa alternativa para quem deseja ter vídeos que podem ser abertos e incorporados em outros sites. Já o Vimeo é uma plataforma mais profissional, em que o video tem melhor qualidade de cores e framerate maior, além de poder ser incorporado apenas no site do criador do conteúdo, evitando a pirataria-->
+</body>
+</html>

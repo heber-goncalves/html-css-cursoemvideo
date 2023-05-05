@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS3</title>
+    
+    <style>
+        body{
+            background-image: linear-gradient(to left, #57D7FF, #157896);
+        }
+        main{
+            background-color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc
+            Medidas relativas: em (relativo ao tamanho natural da fonte no dispositivo), ex (relativa à altura-x), rem (relativo ao M maiúculo da fonte do root, ou seja, relativo à fonte que está configurada no body), vw (largura da viewport, em %), vh (altura da viewport, em %)
+
+            A W3C recomenda o uso das medidas xp e em.
+            16px geralmente é igual à 1em (padrão)
+            */
+            font-size: 16px;
+            font-weight: 200;
+            font-style: italic;
+
+            /*
+            shorthand font: font-style -> font-weight -> font-size ->font-family
+            (qualquer uma das propriedades pode ser suprimida, mas a ordem deve ser mantida)
+            */
+            font: italic bolder 1.2em 'Courier new', monospace;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exercício de Fontes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quo labore maxime rerum sunt itaque quibusdam aperiam doloribus. Modi quisquam quibusdam, ab corporis sunt illum impedit quo, in cupiditate debitis autem voluptatum perferendis molestias eum culpa voluptas. Distinctio, ab ipsum quibusdam aspernatur accusantium dicta et ex tempora minima. Id, doloribus!</p>
+        <h2>Subtítulo do exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, hic pariatur deleniti sunt vero atque. Dicta ut eveniet aspernatur repellendus, dolore voluptatum libero quia porro labore vero quaerat inventore veritatis, illum facere iure omnis est animi eligendi similique aliquid, impedit corporis! At, ipsum mollitia! Exercitationem minima, explicabo laborum facere dicta deleniti alias magni eum vel officiis a magnam. Repudiandae voluptas necessitatibus exercitationem quod, fugit veniam! Culpa, sint. Vero, asperiores minima quidem fuga blanditiis corporis enim perferendis est velit autem rerum quos eum eveniet debitis recusandae quia mollitia suscipit unde numquam iusto quaerat itaque inventore. Cumque corporis doloremque commodi eius eveniet?</p>
+    </main>
+</body>
+</html>

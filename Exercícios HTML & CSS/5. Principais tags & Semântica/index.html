@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica)</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <h2>Texto grande e pequeno</h2>
+    <p><big>Texto grande</big> com a tag &lt;big&gt; (obsoleta)</p>
+    <p><small>Texto pequeno</small> com a tag &lt;small&gt; (não obsoleta)</p>
+    <h2>Texto deletado</h2>
+    <p><del>Texto deletado</del> indica que deve ser lido, mas não considerado. Usa-se a tag &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Com o marcador &lt;ins&gt;, podemos indicar que um texto <ins>foi inserido</ins>, para dar ênfase nele durante a leitura</p>
+    <p>Existe também o <u>texto sublinhado com a tag &gt;u&lt; (não semântica)</u></p>
+    <h2>Textos sobrescrito e subescrito</h2>
+    <p>2<sup>20</sup>. Texto sobrescrito com a tag &lt;sup&gt;</p>
+    <p>H<sub>2</sub>O. Texto subescrito com a tag &lt;sub&gt;</p>
+    <h2>Endereços</h2>
+    <p>Você pode marcar um endereço com a tag &lt;address&gt;, por exemplo: <address>Rua Coronel João Pinto. 2424.</address> Essa é uma alternativa semântica ao uso do itálico, por exemplo, pois facilita que o navegador identifique o texto dentro da tag com sendo um endereço.</p>
+    <h2>Códigos-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript (usada aqui a tag &lt;code&gt;)</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+                if num % 2 == 0;
+            print(f'Número par');
+                else: 
+            print(f'Número ímpar')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <p>Aqui foi usada a tag &lt;code&gt; dentro da tag &lt;pre&gt; para manter a formatação original do texto (indentada, no caso).</p>
+    <h2>Citações</h2>
+    <p>Simples (tag &lt;q&gt;): <q>O computador é um burro muito rápido</q></p>
+    <p>Completa (tag &lt;blockquote&gt;): <blockquote cite = "https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+        "A diferença entre os elementos inline e um bloco de texto é importante."
+    </blockquote></p>
+    <h2>Abreviações, siglas e acrônimos</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language versão 5">HTML 5</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Você está tentando ler um texto invertido</bdo></p>
+</body>
+</html>
